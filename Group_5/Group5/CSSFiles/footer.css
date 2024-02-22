@@ -1,0 +1,33 @@
+footer {
+  padding: 2rem 0;
+  background-color: #efefef;
+  box-shadow: rgb(50 50 93 / 25%) 0px 30px 60px -58px inset,
+    rgb(0 0 0 / 30%) 0px 18px 36px -24px inset;
+  font-size: 1.25rem;
+}
+footer > div {
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer a {
+  display: inline-block;
+  filter: saturate(0);
+  transition: 0.4s ease-in-out;
+}
+
+footer a:hover {
+  filter: none;
+  transform: scale(1.25);
+}
+
+footer > div > div:last-child {
+  display: flex;
+  gap: 8px;
+}
+
+#copyright {
+  font-size: 15px;
+}

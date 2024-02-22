@@ -1,0 +1,56 @@
+﻿@model Group_5.Models.User
+@{
+    ViewBag.Title = "Login";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    
+</head>
+<body>
+    <div>
+        <div class="content">
+            <div class="grid">
+                <div>
+                    <div id="login">
+                        <div class="container">
+                            <div id="login-row" class="row justify-content-center align-items-center">
+                                <div id="login-column" class="col-md-6">
+                                    <div id="login-box" class="col-md-12">
+                                        @ViewBag.Message @using (Html.BeginForm("Login", "Security", FormMethod.Post))
+{
+                                        <h3 class="text-center text-info">Login</h3>
+                                        <div class="form-group">
+                                            @Html.LabelFor(m => m.UserName) @Html.TextBoxFor(m => m.UserName, new { @class = "form-control", placeholder = "Username" })
+                                        </div>
+                                        <br/>
+                                        <div class="form-group">
+                                            @Html.LabelFor(m => m.Password) @Html.TextBoxFor(m => m.Password, new { @class = "form-control", placeholder = "Password" })
+                                        </div>
+                                        <br />
+                                        
+                                        <div class="form-group">
+                                            <label for="remember-me" class="text-info"><span>Remember me</span>&nbsp;<span><input id="remember-me" name="remember-me" type="checkbox"></span></label><br><br /><br />
+                                            <button type="submit" name="submit" class="btn btn-info btn-md">Login</button>
+                                        </div>
+                                        <br />
+                                        <div id="register-link" class="text-right">
+                                            <h4>Don't have an account?</h4><a href="../PersonelManage/Create" class="text-info">Create Account</a>
+                                        </div>
+}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div> <img src="~/Content/Assets/images/login.png" width="100%" /></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+

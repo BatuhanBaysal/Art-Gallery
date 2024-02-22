@@ -1,0 +1,69 @@
+﻿@model IEnumerable<Group_5.Models.Offer>
+
+@{
+    ViewBag.Title = "Index Offer";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div>
+
+    <div class="content">
+        <div class="grid">
+            <div>
+                <h2>Index Offer</h2>
+
+                <p>
+                    @Html.ActionLink("Create New", "Create")
+                </p>
+
+
+                <table class="table">
+                    <tr>
+                        <th>
+                            @Html.DisplayNameFor(model => model.Name)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.Phone)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.Email)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.TitleOfWork)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.Price)
+                        </th>
+                        <th></th>
+                    </tr>
+
+                    @foreach (var item in Model) {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Name)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Phone)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Email)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.TitleOfWork)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Price)
+                        </td>
+                        <td>
+                            @Html.ActionLink("Edit", "Edit", new { id=item.OfferID }) |
+                            @Html.ActionLink("Details", "Details", new { id=item.OfferID }) |
+                            @Html.ActionLink("Delete", "Delete", new { id=item.OfferID })
+                        </td>
+                    </tr>
+}
+
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,56 @@
+.img-container {
+  width: 100%;
+  background: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.5) 50%,
+      rgba(0, 0, 0, 0.5) 50%
+    ),
+    url(../Assets/images/header.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
+}
+
+.header {
+  display: flex;
+  gap: 25px;
+  justify-content: space-between;
+  color: white;
+}
+
+.header a {
+  text-decoration: none;
+  color: white;
+}
+
+.logo {
+  font-family: Arial;
+  font-size: 50px;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+
+ul li {
+  list-style: none;
+}
+
+ul li a {
+  text-decoration: none;
+  color: white;
+  font-family: Arial;
+  font-weight: bold;
+  transition: 0.4s ease-in-out;
+}
+
+ul li a:hover {
+  color: black;
+}

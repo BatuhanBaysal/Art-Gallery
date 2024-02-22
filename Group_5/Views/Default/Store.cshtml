@@ -1,0 +1,111 @@
+﻿
+@{
+    ViewBag.Title = "Store";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div>
+    <form name="store" id="store" method="post" >
+        <div class="content">
+            <h2>@ViewData["message"]</h2>
+            <div class="grid">
+                <div>
+                    <img src="~/Content/Assets/images/Store1.png" title="Dean West" width="100%" />
+                </div>
+                <div>
+                    <h1>Dean West</h1>
+                    <h2>1983</h2>
+                    <p>
+                        <strong>La Piscina 1, Miami, 2022</strong><br />
+                        <i>Series: The Palms</i><br />
+                        <i>Archival Pigment Print</i><br />
+                        <i>61 x 76.2 cm</i><br />
+                        <i>24 x 30 in</i><br />
+                        <strong>€ 2,650.00</strong>
+                    </p>
+                    <strong>@Html.ActionLink("Offer", "Create","StoreManager")</strong>
+                </div>
+            </div>
+
+            <div class="grid">
+                <div>
+                    <img src="~/Content/Assets/images/Store2.png"
+                         title="Jan Gulfoss"
+                         width="100%" />
+                </div>
+                <div>
+                    <h1>Jan Gulfoss</h1>
+                    <h2>1957</h2>
+                    <p>
+                        <strong>A quieter world,2018</strong><br />
+                        <i>Livre : 30 x 30 cm</i><br />
+                        <i>Book: 11 3/4 x 11 3/4 in</i><br />
+                        <i>Photo : 20x20 cm</i><br />
+                        <i>Print: 7 7/8 x7 7/8 in.</i><br />
+                        <i>Edition 28/432</i><br />
+                        <strong>€ 380.00</strong>
+                    </p>
+                    <strong>@Html.ActionLink("Offer", "Create","StoreManager")</strong>
+                </div>
+            </div>
+
+            <div class="grid">
+                <div>
+                    <img src="~/Content/Assets/images/Store3.png"
+                         title="Stephan Zirwes"
+                         width="100%" />
+                </div>
+                <div>
+                    <h1>Stephan Zirwes</h1>
+                    <h2>1967</h2>
+                    <p>
+                        <strong>Leo Lampe, 2018 </strong><br />
+                        <i>Archival pigment print</i><br />
+                        <i>80 x 80 </i><br />
+                        <i>31 1/2 x 31 1/2</i><br />
+                        <strong>€ 550.00</strong>
+                    </p>
+                    <strong>@Html.ActionLink("Offer", "Create","StoreManager")</strong>
+                </div>
+            </div>
+
+            <div class="grid">
+                <div>
+                    <img src="~/Content/Assets/images/Store4.png"
+                         title="Alain Laboile"
+                         width="100%" />
+                </div>
+                <div>
+                    <h1>Alain Laboile</h1>
+                    <h2>1968</h2>
+                    <p>
+                        <strong>Summer of the Fawn, 2018 </strong><br />
+                        <i>18 x 24 cm</i><br />
+                        <i>7 1/8 x 9 1/2 in </i><br />
+                        <i>31 1/2 x 31 1/2</i><br />
+                        <strong>€ 32.00 </strong>
+                    </p>
+                    <strong>@Html.ActionLink("Offer", "Create","StoreManager")</strong>
+                </div>
+            </div>
+
+            <div class="grid">
+                <div>
+                    <img src="~/Content/Assets/images/Store5.png" title="Tim Flach" width="100%" />
+                </div>
+                <div>
+                    <h1>Tim Flach</h1>
+                    <h2>1958</h2>
+                    <p>
+                        <strong> Spirit + More Than Human Limited Edition, 2010 </strong><br />
+                        <i>41 x 50 cm</i><br />
+                        <i>16 1/8 x 19 3/4 in</i><br />
+                        <strong>€ 1,370.00</strong>
+                    </p>
+                    <strong>@Html.ActionLink("Offer", "Create","StoreManager")</strong>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+

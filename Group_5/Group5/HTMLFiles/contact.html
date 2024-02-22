@@ -1,0 +1,159 @@
+<html>
+  <head>
+    <title>ART ON</title>
+    <link rel="stylesheet" type="text/css" href="../CSSFiles/global.css" />
+    <link rel="stylesheet" type="text/css" href="../CSSFiles/header.css" />
+    <link rel="stylesheet" type="text/css" href="../CSSFiles/footer.css" />
+    <link rel="stylesheet" type="text/css" href="../CSSFiles/contact.css" />
+    <script src="../JSFiles/contact.js"></script>
+  </head>
+  <body>
+    <div>
+      <div class="img-container" style="height: initial">
+        <div class="content header">
+          <a href="home.html"><h2 class="logo">ART ON</h2></a>
+          <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="artist.html">Artists</a></li>
+            <li><a href="exhibitions.html">Exhibitions</a></li>
+            <li><a href="store.html">Store</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+          </ul>
+        </div>
+      </div>
+      <div class="content">
+        <div class="grid">
+          <form
+            name="contact"
+            id="contact"
+            method="post"
+            onsubmit="return validate()"
+          >
+            <table>
+              <tr>
+                <td>Contact Us</td>
+              </tr>
+              <tr>
+                <td>
+                  <input
+                    type="text"
+                    id="name"
+                    name="nameText"
+                    maxlength="30"
+                    placeholder="Name*"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <input
+                    type="text"
+                    id="email"
+                    name="emailText"
+                    maxlength="30"
+                    placeholder="Email*"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <input
+                    type="text"
+                    id="phone"
+                    name="phoneText"
+                    maxlength="15"
+                    placeholder="Phone - with country phone code*"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <input
+                    type="text"
+                    id="country"
+                    name="countryText"
+                    maxlength="15"
+                    placeholder="Country"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td><textarea placeholder="Enter Your Message*"></textarea></td>
+              </tr>
+              <tr>
+                <td>
+                  <p class="warning">
+                    * Please do not leave required fields blank.
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <button type="submit" id="sendButton" name="sendBtn">
+                    Send
+                  </button>
+                </td>
+              </tr>
+            </table>
+          </form>
+          <div>
+            <img src="../Assets/images/contact1.png" width="100%" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="content">
+        <div>
+          <p id="copyright">Copyright © 2022 Art On</p>
+          <a
+            href="https://www.iku.edu.tr/tr/istanbulkulturuniversitesi"
+            target="_blank"
+            rel="noopener"
+          >
+            Site by Istanbul Kültür University
+          </a>
+        </div>
+        <div>
+          <a href="mailto:ogrenci.isleri@iku.edu.tr" target="_blank">
+            <img
+              src="../Assets/images/gmail.svg"
+              alt="Gmail Logo"
+              width="30"
+              height="30"
+            />
+          </a>
+          <a href="https://tr-tr.facebook.com/IKUEDU/" target="_blank">
+            <img
+              src="../Assets/images/facebook.svg"
+              alt="Facebook Logo"
+              width="30"
+              height="30"
+            />
+          </a>
+          <a
+            href="https://twitter.com/IKUedu?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
+            target="_blank"
+          >
+            <img
+              src="../Assets/images/twitter.svg"
+              alt="Twitter Logo"
+              width="30"
+              height="30"
+            />
+          </a>
+          <a href="https://www.instagram.com/ikuedu/" target="_blank">
+            <img
+              src="../Assets/images/instagram.svg"
+              alt="Instagram Logo"
+              width="30"
+              height="30"
+            />
+          </a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

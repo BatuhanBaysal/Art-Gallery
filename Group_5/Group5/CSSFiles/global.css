@@ -1,0 +1,43 @@
+body {
+  display: grid;
+  align-content: space-between;
+  min-height: 100vh;
+  font-family: Inter, Helvetica, sans-serif;
+  letter-spacing: 0.4px;
+  line-height: 1.4;
+  padding: 0.1px;
+  margin: 0px;
+}
+
+.content {
+  padding: 0 50px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+  grid-gap: 55px;
+  grid-auto-columns: 1fr;
+  grid-auto-flow: column;
+  justify-content: space-between;
+  align-items: center;
+  margin: 50px 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: EB Garamond, Garamond, serif;
+}
+
+h1 {
+  font-size: 3em;
+}
+
+h2 {
+  font-size: 2em;
+}

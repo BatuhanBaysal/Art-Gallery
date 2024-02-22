@@ -1,0 +1,27 @@
+﻿@model Group_5.Models.Contact
+@{
+    ViewBag.Title = "Contact";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div>
+    <div class="content">
+        <div class="grid">
+            <div>
+                <h1>Thanks!</h1>
+                <h2>Your message has been sent successfully</h2>
+
+                <b>
+                    Name:@ViewBag.name<br />
+                    Email:@ViewBag.email<br />
+                    Phone:@ViewBag.phone<br />
+                    Country:@ViewBag.country<br />
+                    Message:@ViewBag.message<br />
+                </b>
+                <br/><br/>
+                @Html.ActionLink("Back to Contact","Contact")
+            </div>
+        </div>
+    </div>
+</div>
+

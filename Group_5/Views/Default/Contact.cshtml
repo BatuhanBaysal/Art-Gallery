@@ -1,0 +1,35 @@
+﻿@model Group_5.Models.Contact
+@{
+    ViewBag.Title = "Contact";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div>
+    <div class="content">
+        <div class="grid">
+            <div>
+                <h2>@ViewData["message"]</h2>
+                <table>
+                    @using (Html.BeginForm())
+                {
+                    @Html.ValidationSummary()
+                    {
+                    <tr><td>Name   </td><td> @Html.TextBoxFor(x => x.Name)    </td></tr>
+                    <tr><td>Email  </td><td> @Html.TextBoxFor(x => x.Email)   </td></tr>
+                    <tr><td>Phone  </td><td> @Html.TextBoxFor(x => x.Phone)   </td></tr>
+                    <tr><td>Country</td><td> @Html.TextBoxFor(x => x.Country) </td></tr>
+                    <tr><td>Message</td><td> @Html.TextBoxFor(x => x.Message) </td></tr>
+                    }
+                    <tr><td></td>   <td><input type="submit" value="Submit" /></td></tr>
+                }
+                </table>
+                <link rel="stylesheet" type="text/css" />
+            </div>
+
+            <div>
+                <img src="~/Content/Assets/images/contact1.png" width="100%" />
+            </div>
+        </div>
+    </div>
+</div>
+

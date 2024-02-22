@@ -1,0 +1,75 @@
+﻿
+@{
+    Layout = null;
+}
+
+<html>
+<head>
+    <title>@ViewBag.Title</title>
+    <link rel="stylesheet" type="text/css" href="~/Content/CSSFiles/global.css" />
+    <link rel="stylesheet" type="text/css" href="~/Content/CSSFiles/header.css" />
+    <link rel="stylesheet" type="text/css" href="~/Content/CSSFiles/footer.css" />
+    <link rel="stylesheet" type="text/css" href="~/Content/CSSFiles/store.css" />
+    <link rel="stylesheet" type="text/css" href="~/Content/CSSFiles/contact.css" />
+</head>
+<body>
+    <div class="img-container" style="height: initial">
+        <div class="content header">
+            <h2 class="logo">@Html.ActionLink("ART ON", "Home","Default")</h2>
+            <ul>
+                <li>@Html.ActionLink("Home", "Home","Default")</li>
+                <li>@Html.ActionLink("Artist", "Artist","Default")</li>
+                <li>@Html.ActionLink("Exhibitions", "Exhibitions","Default")</li>
+                <li>@Html.ActionLink("Store", "Store","Default")</li>
+                <li>@Html.ActionLink("About", "About","Default")</li>
+                <li>@Html.ActionLink("Contact", "Contact","Default")</li>
+                <li>@Html.ActionLink("Offer", "Create","StoreManager")</li>
+                <li>@Html.ActionLink("Log in/out","Logout","Security")</li>
+            </ul>
+        </div>
+    </div>
+
+    @RenderBody()
+   
+    <footer>
+        <div class="content">
+            <div>
+                <p id="copyright">Copyright © 2022 Art On</p>
+                <a href="https://www.iku.edu.tr/tr/istanbulkulturuniversitesi"
+                   target="_blank"
+                   rel="noopener">
+                    Site by Istanbul Kultur University
+                </a>
+            </div>
+            <div>
+                <a href="mailto:ogrenci.isleri@iku.edu.tr" target="_blank">
+                    <img src="~/Content/Assets/images/gmail.svg"
+                         alt="Gmail Logo"
+                         width="30"
+                         height="30" />
+                </a>
+                <a href="https://tr-tr.facebook.com/IKUEDU/" target="_blank">
+                    <img src="~/Content/Assets/images/facebook.svg"
+                         alt="Facebook Logo"
+                         width="30"
+                         height="30" />
+                </a>
+                <a href="https://twitter.com/IKUedu?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
+                   target="_blank">
+                    <img src="~/Content/Assets/images/twitter.svg"
+                         alt="Twitter Logo"
+                         width="30"
+                         height="30" />
+                </a>
+                <a href="https://www.instagram.com/explore/locations/880978/istanbul-kultur-universitesi/" target="_blank">
+                    <img src="~/Content/Assets/images/instagram.svg"
+                         alt="Instagram Logo"
+                         width="30"
+                         height="30" />
+                </a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+
